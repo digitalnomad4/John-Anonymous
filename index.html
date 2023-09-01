@@ -1,0 +1,124 @@
+ <!--Website by Aldwin Pena-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>John Wentworth</title>
+     <!-- Link to Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+     <meta name="description" content="Explore the art and tattoos by John Wentworth. View a collection of artworks and tattoos in various styles.">
+     <meta name="keywords" content="John Wentworth, Art and Tattoos, Portfolio, artworks, tattoos">
+ 
+     <!-- Link to your custom styles -->
+     <link rel="stylesheet" href="styles.css">
+     <!-- Optional: Link to your custom JavaScript file -->
+     <script src="script.js" defer></script>
+     <!-- Include jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Include Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Lightbox library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+     <style>
+         body {
+             background-color: rgb(134, 128, 128) !important;
+             color: black;
+             font-family: 'Spectral', serif;
+         }
+         
+         .gallery {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+         }
+         
+         .gallery-item {
+             flex: 0 0 calc(25% - 20px); /* Adjust this value for image spacing and size */
+             margin: 10px;
+         }
+         
+         .gallery-item img {
+             max-width: 100%;
+             height: auto;
+             transition: transform 0.2s;
+         }
+         
+         .gallery-item:hover img {
+             transform: scale(1.1);
+         }
+         @keyframes colorChange {
+             0% { color: #ff9999; } /* Start color */
+             50% { color: #ffffff; } /* Middle color (contrasting) */
+             100% { color: #ff6666; } /* End color */
+         }
+         .h1-filled {
+             position: sticky;
+             top: 100;
+             z-index: 100;
+             background-image: linear-gradient(to bottom, #ff9999, #ff6666);
+             -webkit-background-clip: text;
+             background-clip: text;
+             color: transparent;
+             display: inline-block;
+             padding: 10px 20px;
+             border-radius: 10px;
+             animation: colorChange 4s infinite alternate; /* Apply the animation */
+         }
+ 
+     </style>
+      <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+ 
+     </head>
+ <body>
+     
+     <header class="bg-dark text-white py-4">
+         <h1 class="text-center h1-filled">John Wentworth</h1>
+     </header>
+     
+     <main class="container my-5">
+         <section>
+            <h2 class="text-center mb-4" style="color: white;">Welcome to John Wentworth's Portfolio</h2>
+             <div class="gallery" id="gallery">
+                 
+                 <div class="gallery-item">
+                     <a href="T1.jpg" data-lightbox="gallery"><img src="T1.jpg" alt="Artwork 1"></a>
+                     <p class="image-caption">Looking on Division</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="A3.jpg" data-lightbox="gallery"><img src="A3.jpg" alt="Artwork 2"></a>
+                     <p class="image-caption">Seventy-One</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="T3.jpg" data-lightbox="gallery"><img src="T3.jpg" alt="Artwork 3"></a>
+                     <p class="image-caption">Sorry</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="A17.jpg" data-lightbox="gallery"><img src="A17.jpg" alt="Artwork 4"></a>
+                     <p class="image-caption">Izzy</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="T11.jpg" data-lightbox="gallery"><img src="T11.jpg" alt="Artwork 4"></a>
+                     <p class="image-caption">Bill</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="A7.jpg" data-lightbox="gallery"><img src="A7.jpg" alt="Artwork 5"></a>
+                     <p class="image-caption">Crown</p>
+                 </div>
+                 <div class="gallery-item">
+                     <a href="A4.jpg" data-lightbox="gallery"><img src="A4.jpg" alt="Artwork 6"></a>
+                     <p class="image-caption">Chapel</p>
+                 </div>
+                
+ 
+             </div>
+       
+     </main>
+     
+     <footer class="bg-dark text-white py-3">
+         <p class="text-center m-0">&copy; 2023 John Wentworth.</p>
+     </footer>
+ </body>
+ </html>
